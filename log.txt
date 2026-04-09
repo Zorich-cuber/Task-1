@@ -1,0 +1,154 @@
+мар. 16, 2026 1:33:01 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:33:02 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:33:03 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:33:04 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:33:04 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:33:05 AM com.bibik.App main
+INFO: В массив добавлено число: 0
+мар. 16, 2026 1:37:55 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:37:57 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:37:58 AM com.bibik.App main
+INFO: В массив добавлено число: 5
+мар. 16, 2026 1:37:58 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:37:59 AM com.bibik.App main
+INFO: В массив добавлено число: 56
+мар. 16, 2026 1:38:00 AM com.bibik.App main
+INFO: В массив добавлено число: 7
+мар. 16, 2026 1:38:00 AM com.bibik.App main
+INFO: В массив добавлено число: 4
+мар. 16, 2026 1:38:01 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:38:02 AM com.bibik.App main
+INFO: В массив добавлено число: 6
+мар. 16, 2026 1:38:02 AM com.bibik.App main
+INFO: В массив добавлено число: 4
+мар. 16, 2026 1:38:02 AM com.bibik.App main
+INFO: Массив успешно заполнен: 
+мар. 16, 2026 1:44:43 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:44 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:44 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:44 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:44 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:44 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: В массив добавлено число: 11
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: Массив успешно заполнен: 
+мар. 16, 2026 1:44:45 AM com.bibik.App main
+INFO: Сортированный массив: CustomArray: [1, 1, 1, 1, 1, 1, 1, 1, 1, 11]
+мар. 16, 2026 1:45:50 AM com.bibik.App main
+INFO: В массив добавлено число: 34
+мар. 16, 2026 1:45:51 AM com.bibik.App main
+INFO: В массив добавлено число: 4324
+мар. 16, 2026 1:45:52 AM com.bibik.App main
+INFO: В массив добавлено число: 56435
+мар. 16, 2026 1:45:52 AM com.bibik.App main
+INFO: В массив добавлено число: 65
+мар. 16, 2026 1:45:53 AM com.bibik.App main
+INFO: В массив добавлено число: 65
+мар. 16, 2026 1:45:54 AM com.bibik.App main
+INFO: В массив добавлено число: 67
+мар. 16, 2026 1:45:55 AM com.bibik.App main
+INFO: В массив добавлено число: 44
+мар. 16, 2026 1:45:55 AM com.bibik.App main
+INFO: В массив добавлено число: 7
+мар. 16, 2026 1:45:56 AM com.bibik.App main
+INFO: В массив добавлено число: 4
+мар. 16, 2026 1:45:56 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:45:56 AM com.bibik.App main
+INFO: Массив успешно заполнен: 
+мар. 16, 2026 1:45:56 AM com.bibik.App main
+INFO: Сортированный массив: CustomArray: [34, 4324, 56435, 65, 65, 67, 44, 7, 4, 3]
+мар. 16, 2026 1:52:59 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:53:00 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:53:00 AM com.bibik.App main
+INFO: В массив добавлено число: 5
+мар. 16, 2026 1:53:01 AM com.bibik.App main
+INFO: В массив добавлено число: 78
+мар. 16, 2026 1:53:02 AM com.bibik.App main
+INFO: В массив добавлено число: 6
+мар. 16, 2026 1:53:03 AM com.bibik.App main
+INFO: В массив добавлено число: 54
+мар. 16, 2026 1:53:14 AM com.bibik.App main
+INFO: В массив добавлено число: 56
+мар. 16, 2026 1:53:15 AM com.bibik.App main
+INFO: В массив добавлено число: 34
+мар. 16, 2026 1:53:15 AM com.bibik.App main
+INFO: В массив добавлено число: 3
+мар. 16, 2026 1:53:16 AM com.bibik.App main
+INFO: В массив добавлено число: 6
+мар. 16, 2026 1:53:17 AM com.bibik.App main
+INFO: В массив добавлено число: 534532
+мар. 16, 2026 1:53:18 AM com.bibik.App main
+INFO: В массив добавлено число: 233
+мар. 16, 2026 1:53:18 AM com.bibik.App main
+INFO: В массив добавлено число: 2
+мар. 16, 2026 1:53:19 AM com.bibik.App main
+INFO: В массив добавлено число: 45
+мар. 16, 2026 1:53:20 AM com.bibik.App main
+INFO: В массив добавлено число: 2
+мар. 16, 2026 1:53:21 AM com.bibik.App main
+INFO: В массив добавлено число: 1
+мар. 16, 2026 1:53:21 AM com.bibik.App main
+INFO: Массив успешно заполнен: 
+мар. 16, 2026 1:53:21 AM com.bibik.App main
+INFO: Сортированный массив: 534532
+мар. 16, 2026 1:54:15 AM com.bibik.App main
+INFO: В массив добавлено число: 231
+мар. 16, 2026 1:54:15 AM com.bibik.App main
+INFO: В массив добавлено число: 342
+мар. 16, 2026 1:54:16 AM com.bibik.App main
+INFO: В массив добавлено число: 32432
+мар. 16, 2026 1:54:17 AM com.bibik.App main
+INFO: В массив добавлено число: 3423
+мар. 16, 2026 1:54:17 AM com.bibik.App main
+INFO: В массив добавлено число: 23423
+мар. 16, 2026 1:54:18 AM com.bibik.App main
+INFO: В массив добавлено число: 32423
+мар. 16, 2026 1:54:18 AM com.bibik.App main
+INFO: В массив добавлено число: 32423
+мар. 16, 2026 1:54:19 AM com.bibik.App main
+INFO: В массив добавлено число: 2
+мар. 16, 2026 1:54:20 AM com.bibik.App main
+INFO: В массив добавлено число: 56
+мар. 16, 2026 1:54:20 AM com.bibik.App main
+INFO: В массив добавлено число: 67
+мар. 16, 2026 1:54:20 AM com.bibik.App main
+INFO: Массив успешно заполнен: 
+мар. 16, 2026 1:54:20 AM com.bibik.App main
+INFO: Сортированный массив max: 32432
+мар. 16, 2026 2:12:17 AM com.bibik.CustomArray createBySize
+INFO: Объект CustomArray успешно создан. Размер:5
+мар. 16, 2026 2:12:17 AM com.bibik.CustomArray createBySize
+SEVERE: Попытка создания массива с отрицательным размером:-5
+мар. 16, 2026 2:19:05 AM com.bibik.CustomArray createBySize
+INFO: Объект CustomArray успешно создан. Размер:5
+мар. 16, 2026 2:19:05 AM com.bibik.CustomArray createBySize
+SEVERE: Попытка создания массива с отрицательным размером:-5
+мар. 16, 2026 2:20:31 AM com.bibik.CustomArray createBySize
+INFO: Объект CustomArray успешно создан. Размер:5
+мар. 16, 2026 2:20:31 AM com.bibik.CustomArray createBySize
+SEVERE: Попытка создания массива с отрицательным размером:-5
