@@ -1,4 +1,6 @@
-package com.bibik;
+package com.task.array.service;
+
+import com.task.array.entity.CustomArray;
 
 public interface CustomArrayService {
     int findMax(CustomArray array);

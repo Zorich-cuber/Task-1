@@ -1,5 +1,7 @@
-package com.bibik;
+package com.task.array;
 
+import com.task.array.entity.CustomArray;
+import com.task.array.exception.CustomArrayExeption;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

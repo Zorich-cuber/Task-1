@@ -1,11 +1,15 @@
-package com.bibik;
+package com.task.array.service.impl;
+
+import com.task.array.entity.CustomArray;
+import com.task.array.exception.CustomArrayExeption;
+import com.task.array.service.CustomArrayService;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.logging.*;
 
 
-public class CustomArrayServiceImpl implements CustomArrayService{
+public class CustomArrayServiceImpl implements CustomArrayService {
 
     private static final Logger log = Logger.getLogger(CustomArrayServiceImpl.class.getName());
 

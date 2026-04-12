@@ -1,4 +1,6 @@
-package com.bibik;
+package com.task.array.entity;
+
+import com.task.array.exception.CustomArrayExeption;
 
 import java.util.logging.*;
 import java.util.Arrays;
@@ -23,7 +25,7 @@ public class CustomArray {
     }
 
 
-    private CustomArray(int... incomingData) {
+    private CustomArray(int[] incomingData) {
 
         this.data = incomingData.clone();
     }
@@ -39,7 +41,7 @@ public class CustomArray {
     }
 
 
-    public static CustomArray createWithData(int... data) {
+    public static CustomArray createWithData(int[] data) {
         if (data == null) {
             log.severe("Попытка создать массив из null данных");
             throw new CustomArrayExeption("Данные не могут быть null");
