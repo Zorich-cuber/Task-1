@@ -156,3 +156,13 @@ SEVERE: Попытка создания массива с отрицательн
 INFO: Объект CustomArray успешно создан. Размер:5
 апр. 12, 2026 2:05:16 AM com.task.array.CustomArray createBySize
 SEVERE: Попытка создания массива с отрицательным размером:-5
+апр. 12, 2026 4:03:05 AM com.task.array.entity.CustomArray createBySize
+INFO: Объект CustomArray успешно создан. Размер:5
+апр. 12, 2026 4:03:05 AM com.task.array.entity.CustomArray createBySize
+SEVERE: Попытка создания массива с отрицательным размером:-5
+апр. 12, 2026 4:04:41 AM com.task.array.entity.CustomArray createBySize
+INFO: Объект CustomArray успешно создан. Размер:5
+апр. 12, 2026 4:04:41 AM com.task.array.entity.CustomArray createBySize
+SEVERE: Попытка создания массива с отрицательным размером:-5
+апр. 12, 2026 4:07:38 AM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [10, 50, 30]
