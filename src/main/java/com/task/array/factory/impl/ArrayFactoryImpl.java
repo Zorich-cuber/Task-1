@@ -23,7 +23,7 @@ public class ArrayFactoryImpl implements ArrayFactory {
     public  CustomArray createWithData(int[] data) {
         if (data == null) {
             log.severe("Attempt to create an array of null data");
-            throw new CustomArrayExeption("Данные не могут быть null");
+            throw new CustomArrayExeption("The data cannot be null");
         }
         log.info("The CustomArray object was successfully created. Size: " + data.length);
         return new CustomArray(data);
