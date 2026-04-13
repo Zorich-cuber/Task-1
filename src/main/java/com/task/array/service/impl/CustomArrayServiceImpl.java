@@ -1,11 +1,12 @@
 package com.task.array.service.impl;
 
 import com.task.array.entity.CustomArray;
-import com.task.array.exception.CustomArrayExeption;
 import com.task.array.service.CustomArrayService;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.OptionalDouble;
+import java.util.OptionalInt;
 import java.util.logging.*;
 
 
@@ -18,26 +19,28 @@ public class CustomArrayServiceImpl implements CustomArrayService {
             FileHandler fh = new FileHandler("log.txt", true);
             fh.setFormatter(new SimpleFormatter());
             log.addHandler(fh);
-        } catch (Exception ignored) {}
+        } catch (Exception ignored) {
+        }
     }
 
     @Override
-    public int findMax(CustomArray array) {
-        log.info("Поиск максимума в массиве: " + array);
+    public OptionalInt findMax(CustomArray array) {
+        log.info("Finding the maximum in an array: " + array);
         return Arrays.stream(array.getData())
-                .max()
-                .orElseThrow(() -> {
-                    log.severe("Ошибка: Попытка найти максимум в пустом массиве");
-                   return new CustomArrayExeption("Массив пуст, максимума нет");
-                });
+                .max();
     }
 
     @Override
-    public int findMin(CustomArray array) {
+    public OptionalInt findMin(CustomArray array) {
         return Arrays.stream(array.getData())
-                .min()
-                .orElseThrow(()-> new CustomArrayExeption("Массив пуст, минимума нет"));
+                .min();
 
+    }
+
+    @Override
+    public OptionalDouble findAverage(CustomArray array) {
+        return Arrays.stream(array.getData())
+                .average();
     }
 
     @Override
@@ -59,7 +62,7 @@ public class CustomArrayServiceImpl implements CustomArrayService {
         int[] reversed = Arrays.stream(array.getData())
                 .boxed()
                 .sorted(Comparator.reverseOrder())
-                .mapToInt(i->i)
+                .mapToInt(i -> i)
                 .toArray();
         array.setElements(reversed);
 

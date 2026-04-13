@@ -166,3 +166,143 @@ INFO: Объект CustomArray успешно создан. Размер:5
 SEVERE: Попытка создания массива с отрицательным размером:-5
 апр. 12, 2026 4:07:38 AM com.task.array.service.impl.CustomArrayServiceImpl findMax
 INFO: Поиск максимума в массиве: CustomArray: [10, 50, 30]
+апр. 13, 2026 4:56:28 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 4:57:22 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 4:57:52 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 4:59:22 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 5:05:12 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 5:06:45 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 5:12:09 PM App main
+SEVERE: Ошибка при работе с данными: Проблема с файлом по пути: data/arrays.txt
+апр. 13, 2026 5:15:34 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:15:34 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:15:34 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:15:34 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:15:34 PM App main
+WARNING: Строка пропущена (некорректный формат): 1y1 21 32
+апр. 13, 2026 5:15:34 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [3, 4, 7]
+апр. 13, 2026 5:15:34 PM App main
+INFO: Обработан массив из файла. Max: 7
+апр. 13, 2026 5:26:43 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:26:43 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:30:20 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:30:20 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:30:20 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [12, 55, 77]
+апр. 13, 2026 5:30:20 PM App main
+INFO: Обработан массив из файла. Max: 77
+апр. 13, 2026 5:30:20 PM App main
+WARNING: Строка пропущена (некорректный формат): 1z 2 3
+апр. 13, 2026 5:30:20 PM App main
+WARNING: Строка пропущена (некорректный формат): 4..5 6
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:30:20 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: []
+апр. 13, 2026 5:30:20 PM com.task.array.service.impl.CustomArrayServiceImpl lambda$findMax$0
+SEVERE: Ошибка: Попытка найти максимум в пустом массиве
+апр. 13, 2026 5:30:20 PM App main
+SEVERE: Ошибка при работе с данными: Массив пуст, максимума нет
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [12, 55, 77]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 77
+апр. 13, 2026 5:34:33 PM App main
+WARNING: Строка пропущена (некорректный формат): 1z 2 3
+апр. 13, 2026 5:34:33 PM App main
+WARNING: Строка пропущена (некорректный формат): 4..5 6
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 5:34:33 PM App main
+WARNING: Строка пропущена (некорректный формат): 
+апр. 13, 2026 5:34:33 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [99, 100]
+апр. 13, 2026 5:34:33 PM App main
+INFO: Обработан массив из файла. Max: 100
+апр. 13, 2026 5:34:33 PM App main
+WARNING: Строка пропущена (некорректный формат): a b c
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [12, 55, 77]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 77
+апр. 13, 2026 6:07:29 PM org.example.App main
+WARNING: Строка пропущена (некорректный формат или пустая): 1z 2 3
+апр. 13, 2026 6:07:29 PM org.example.App main
+WARNING: Строка пропущена (некорректный формат или пустая): 4..5 6
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 3
+апр. 13, 2026 6:07:29 PM org.example.App main
+WARNING: Строка пропущена (некорректный формат или пустая): 
+апр. 13, 2026 6:07:29 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Поиск максимума в массиве: CustomArray: [99, 100]
+апр. 13, 2026 6:07:29 PM org.example.App main
+INFO: Обработан массив из файла. Max: 100
+апр. 13, 2026 6:07:29 PM org.example.App main
+WARNING: Строка пропущена (некорректный формат или пустая): a b c
+апр. 13, 2026 6:41:55 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [10, 50, 30]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [12, 55, 77]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [1, 2, 3]
+апр. 13, 2026 6:43:05 PM com.task.array.service.impl.CustomArrayServiceImpl findMax
+INFO: Finding the maximum in an array: CustomArray: [99, 100]

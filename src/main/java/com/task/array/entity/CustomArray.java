@@ -20,34 +20,14 @@ public class CustomArray {
         }
     }
 
-    private CustomArray(int size) {
+    public CustomArray(int size) {
         this.data = new int[size];
     }
 
 
-    private CustomArray(int[] incomingData) {
+    public CustomArray(int[] incomingData) {
 
         this.data = incomingData.clone();
-    }
-
-
-    public static CustomArray createBySize(int size) {
-        if (size < 0) {
-            log.severe("Попытка создания массива с отрицательным размером:" + size);
-            throw new CustomArrayExeption("Размер не может быть меньше 0. У вас равен = " + size);
-        }
-        log.info("Объект CustomArray успешно создан. Размер:" + size);
-        return new CustomArray(size);
-    }
-
-
-    public static CustomArray createWithData(int[] data) {
-        if (data == null) {
-            log.severe("Попытка создать массив из null данных");
-            throw new CustomArrayExeption("Данные не могут быть null");
-        }
-        log.info("Объект CustomArray успешно создан. Размер: " + data.length);
-        return new CustomArray(data);
     }
 
     @Override
@@ -82,7 +62,7 @@ public class CustomArray {
 
     public void setElements(int[] data) {
         if (data == null) {
-            throw new IllegalArgumentException("Данные не могут быть null");
+            throw new IllegalArgumentException("The data cannot be null");
         }
         this.data = data.clone();
     }

@@ -17,7 +17,7 @@ public class Reader {
             return lines.collect(Collectors.toList());
         } catch (IOException e) {
 
-            throw new CustomArrayExeption("Проблема с файлом по пути: " + filePath, e);
+            throw new CustomArrayExeption("Problem with file on path: " + filePath, e);
         }
     }
 }
