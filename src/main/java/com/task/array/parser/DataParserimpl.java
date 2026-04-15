@@ -12,7 +12,7 @@ public class DataParserimpl implements DataParser {
     public int[] parseLine(String line) throws CustomArrayException {
         String[] parts = line.trim().split(DELIMITER_REGEX);
         return Arrays.stream(parts)
-                .filter(s -> !s.isEmpty())
+                .filter(s -> !s.isBlank())
                 .mapToInt(Integer::parseInt)
                 .toArray();
     }
