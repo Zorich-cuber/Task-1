@@ -1,31 +1,32 @@
 package com.task.array.factory.impl;
 
 import com.task.array.entity.CustomArray;
-import com.task.array.exception.CustomArrayExeption;
+import com.task.array.exception.CustomArrayException;
 import com.task.array.factory.ArrayFactory;
-import java.util.logging.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ArrayFactoryImpl implements ArrayFactory {
 
-    private static final Logger log = Logger.getLogger(ArrayFactoryImpl.class.getName());
+    private static final Logger logger = LogManager.getLogger(ArrayFactoryImpl.class);
 
-     @Override
-    public  CustomArray createBySize(int size) {
+    @Override
+    public CustomArray createBySize(int size) throws CustomArrayException {
         if (size < 0) {
-            log.severe("Attempt to create an array with a negative size:" + size);
-            throw new CustomArrayExeption("The size cannot be less than 0. Yours is = " + size);
+            logger.info("Attempt to create an array with a negative size:" + size);
+            throw new CustomArrayException("The size cannot be less than 0. Yours is = " + size);
         }
-        log.info("The CustomArray object was successfully created. Size: " + size);
+        logger.info("The CustomArray object was successfully created. Size: " + size);
         return new CustomArray(size);
     }
 
-     @Override
-    public  CustomArray createWithData(int[] data) {
+    @Override
+    public CustomArray createWithData(int[] data) throws CustomArrayException {
         if (data == null) {
-            log.severe("Attempt to create an array of null data");
-            throw new CustomArrayExeption("The data cannot be null");
+            logger.info("Attempt to create an array of null data");
+            throw new CustomArrayException("The data cannot be null");
         }
-        log.info("The CustomArray object was successfully created. Size: " + data.length);
+        logger.info("The CustomArray object was successfully created. Size: " + data.length);
         return new CustomArray(data);
     }
 

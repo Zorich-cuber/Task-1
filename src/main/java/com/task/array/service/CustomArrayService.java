@@ -1,6 +1,7 @@
 package com.task.array.service;
 
 import com.task.array.entity.CustomArray;
+import com.task.array.exception.CustomArrayException;
 
 import java.util.OptionalDouble;
 import java.util.OptionalInt;
@@ -14,7 +15,7 @@ public interface CustomArrayService {
 
     OptionalDouble findAverage(CustomArray array);
 
-    void sort1(CustomArray array);
+    void bubbleSort(CustomArray customArray) throws CustomArrayException;
 
-    void sort2(CustomArray array);
+    void selectionSort(CustomArray customArray) throws CustomArrayException;
 }

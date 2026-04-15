@@ -1,9 +1,9 @@
 package com.task.array.parser;
 
-import com.task.array.exception.CustomArrayExeption;
+import com.task.array.exception.CustomArrayException;
 
 public interface DataParser {
-    int[] parseLine(String line) throws CustomArrayExeption;
+    int[] parseLine(String line) throws CustomArrayException;
 
 }
 

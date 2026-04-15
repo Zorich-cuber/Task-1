@@ -3,8 +3,8 @@ package org.example;
 import com.task.array.parser.DataParserimpl;
 import com.task.array.service.impl.CustomArrayServiceImpl;
 import com.task.array.entity.CustomArray;
-import com.task.array.exception.CustomArrayExeption;
-import com.task.array.reader.Reader;
+import com.task.array.exception.CustomArrayException;
+import com.task.array.reader.ArrayReader;
 import com.task.array.validator.DataValidator;
 import com.task.array.parser.DataParser;
 import com.task.array.factory.ArrayFactory;
@@ -20,7 +20,7 @@ public class App {
 
     public static void main(String[] args) {
         String filePath = "data/arrays.txt";
-        Reader reader = new Reader();
+        ArrayReader reader = new ArrayReader();
         DataValidator validator = new DataValidator();
         DataParser parser = new DataParserimpl();
         CustomArrayServiceImpl service = new CustomArrayServiceImpl();
@@ -47,7 +47,7 @@ public class App {
                 }
             }
 
-        } catch (CustomArrayExeption e) {
+        } catch (CustomArrayException e) {
             log.severe("Error while working with data: " + e.getMessage());
         }
     }

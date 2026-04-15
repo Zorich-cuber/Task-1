@@ -1,24 +1,14 @@
 package com.task.array.entity;
 
-import com.task.array.exception.CustomArrayExeption;
-
-import java.util.logging.*;
 import java.util.Arrays;
-import java.util.logging.FileHandler;
-import java.util.logging.SimpleFormatter;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class CustomArray {
-    private static final Logger log = Logger.getLogger(CustomArray.class.getName());
-    private int[] data;
+    private static final Logger logger = LogManager.getLogger(CustomArray.class);
 
-    static {
-        try {
-            FileHandler fh = new FileHandler("log.txt", true);
-            fh.setFormatter(new SimpleFormatter());
-            log.addHandler(fh);
-        } catch (Exception ignored) {
-        }
-    }
+    private int[] data;
 
     public CustomArray(int size) {
         this.data = new int[size];
@@ -33,19 +23,6 @@ public class CustomArray {
     @Override
     public String toString() {
         return "CustomArray: " + Arrays.toString(data);
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        CustomArray that = (CustomArray) o;
-        return Arrays.equals(data, that.data);
-    }
-
-    @Override
-    public int hashCode() {
-        return Arrays.hashCode(data);
     }
 
     public int[] getData() {
@@ -66,4 +43,18 @@ public class CustomArray {
         }
         this.data = data.clone();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CustomArray that = (CustomArray) o;
+        return Arrays.equals(data, that.data);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(data);
+    }
+
 }

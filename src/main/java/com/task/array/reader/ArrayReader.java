@@ -1,6 +1,6 @@
 package com.task.array.reader;
 
-import com.task.array.exception.CustomArrayExeption;
+import com.task.array.exception.CustomArrayException;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,14 +10,14 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Reader {
-    public List<String> readLines(String filePath) throws CustomArrayExeption {
+public class ArrayReader {
+    public List<String> readLines(String filePath) throws CustomArrayException {
         Path path = Paths.get(filePath);
         try (Stream<String> lines = Files.lines(path)) {
             return lines.collect(Collectors.toList());
         } catch (IOException e) {
 
-            throw new CustomArrayExeption("Problem with file on path: " + filePath, e);
+            throw new CustomArrayException("Problem with file on path: " + filePath, e);
         }
     }
 }
