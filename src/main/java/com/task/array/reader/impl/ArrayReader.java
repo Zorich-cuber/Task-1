@@ -1,6 +1,7 @@
-package com.task.array.reader;
+package com.task.array.reader.impl;
 
 import com.task.array.exception.CustomArrayException;
+import com.task.array.reader.readLines;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -10,7 +11,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class ArrayReader {
+public class ArrayReader implements readLines {
+
+    @Override
     public List<String> readLines(String filePath) throws CustomArrayException {
         Path path = Paths.get(filePath);
         try (Stream<String> lines = Files.lines(path)) {

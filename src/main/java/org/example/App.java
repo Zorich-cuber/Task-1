@@ -4,7 +4,7 @@ import com.task.array.parser.DataParserimpl;
 import com.task.array.service.impl.CustomArrayServiceImpl;
 import com.task.array.entity.CustomArray;
 import com.task.array.exception.CustomArrayException;
-import com.task.array.reader.ArrayReader;
+import com.task.array.reader.impl.ArrayReader;
 import com.task.array.validator.DataValidator;
 import com.task.array.parser.DataParser;
 import com.task.array.factory.ArrayFactory;

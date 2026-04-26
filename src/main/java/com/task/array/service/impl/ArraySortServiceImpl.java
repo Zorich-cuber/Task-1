@@ -2,45 +2,13 @@ package com.task.array.service.impl;
 
 import com.task.array.entity.CustomArray;
 import com.task.array.exception.CustomArrayException;
-import com.task.array.service.CustomArrayService;
-
-import java.util.Arrays;
-import java.util.OptionalDouble;
-import java.util.OptionalInt;
-import java.util.logging.*;
+import com.task.array.service.ArraySortService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+public class ArraySortServiceImpl implements ArraySortService {
 
-public class CustomArrayServiceImpl implements CustomArrayService {
-
-    private static final Logger logger = LogManager.getLogger(CustomArrayServiceImpl.class);
-
-    @Override
-    public OptionalInt findMax(CustomArray array) {
-        logger.info("Finding the maximum in an array: " + array);
-        return Arrays.stream(array.getData())
-                .max();
-    }
-
-    @Override
-    public OptionalInt findMin(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .min();
-
-    }
-
-    @Override
-    public OptionalDouble findAverage(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .average();
-    }
-
-    @Override
-    public double sum(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .sum();
-    }
+    private static final Logger logger = LogManager.getLogger(ArraySortServiceImpl.class);
 
     @Override
     public void bubbleSort(CustomArray customArray) throws CustomArrayException {
