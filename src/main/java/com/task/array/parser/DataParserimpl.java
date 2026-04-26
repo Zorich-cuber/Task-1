@@ -6,11 +6,11 @@ import java.util.Arrays;
 
 public class DataParserimpl implements DataParser {
 
-    private static final String DELIMITER_REGEX = "[\\s,;-]+";
+    private static final String WHITESPACE_AND_PUNCTUATION_REGEX = "[\\s,;-]+";
 
     @Override
     public int[] parseLine(String line) throws CustomArrayException {
-        String[] parts = line.trim().split(DELIMITER_REGEX);
+        String[] parts = line.trim().split(WHITESPACE_AND_PUNCTUATION_REGEX);
         return Arrays.stream(parts)
                 .filter(s -> !s.isBlank())
                 .mapToInt(Integer::parseInt)

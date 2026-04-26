@@ -7,5 +7,6 @@ public class CustomArrayException extends Exception {
     public CustomArrayException(String message, Throwable cause) {
         super(message, cause);
     }
+
 }
 

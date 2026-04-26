@@ -14,28 +14,39 @@ public class ArrayCalculationServiceImpl implements ArrayCalculationService {
     private static final Logger logger = LogManager.getLogger(ArrayCalculationServiceImpl.class);
 
     @Override
-    public OptionalInt findMax(CustomArray array) {
-        logger.info("Finding the maximum in an array: " + array);
-        return Arrays.stream(array.getData())
-                .max();
+    public OptionalInt findMax(int[] array) {
+        if (array == null || array.length == 0) {
+            logger.warn("Attempt to find max in null or empty array");
+            return OptionalInt.empty();
+        }
+        logger.info("Finding maximum in array of size: {}", array.length);
+        return Arrays.stream(array).max();
     }
 
     @Override
-    public OptionalInt findMin(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .min();
-
+    public OptionalInt findMin(int[] array) {
+        if (array == null || array.length == 0) {
+            logger.warn("Attempt to find min in null or empty array");
+            return OptionalInt.empty();
+        }
+        return Arrays.stream(array).min();
     }
 
     @Override
-    public OptionalDouble findAverage(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .average();
+    public OptionalDouble findAverage(int[] array) {
+        if (array == null || array.length == 0) {
+            logger.warn("Attempt to calculate average of null or empty array");
+            return OptionalDouble.empty();
+        }
+        return Arrays.stream(array).average();
     }
 
     @Override
-    public double sum(CustomArray array) {
-        return Arrays.stream(array.getData())
-                .sum();
+    public double sum(int[] array) {
+        if (array == null || array.length == 0) {
+            logger.warn("Attempt to calculate sum of null or empty array");
+            return 0.0;
+        }
+        return Arrays.stream(array).sum();
     }
 }

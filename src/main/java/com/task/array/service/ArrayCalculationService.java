@@ -8,12 +8,12 @@ import java.util.OptionalInt;
 
 public interface ArrayCalculationService {
 
-    double sum(CustomArray array);
+    double sum(int[] array);
 
-    OptionalInt findMax(CustomArray array);
+    OptionalInt findMax(int[] array);
 
-    OptionalInt findMin(CustomArray array);
+    OptionalInt findMin(int[] array);
 
-    OptionalDouble findAverage(CustomArray array);
+    OptionalDouble findAverage(int[] array);
 
 }
