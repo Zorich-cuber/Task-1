@@ -1,54 +1,62 @@
 package org.example;
 
-import com.task.array.parser.DataParserimpl;
-import com.task.array.service.impl.CustomArrayServiceImpl;
 import com.task.array.entity.CustomArray;
 import com.task.array.exception.CustomArrayException;
-import com.task.array.reader.impl.ArrayReader;
-import com.task.array.validator.DataValidator;
-import com.task.array.parser.DataParser;
 import com.task.array.factory.ArrayFactory;
 import com.task.array.factory.impl.ArrayFactoryImpl;
+import com.task.array.observer.ArrayObserver;
+import com.task.array.observer.impl.ArrayObserverImpl;
+import com.task.array.parser.DataParser;
+import com.task.array.parser.DataParserimpl;
+import com.task.array.reader.impl.ArrayReader;
+import com.task.array.repository.impl.ArrayRepositoryImpl;
+import com.task.array.service.impl.ArrayCalculationServiceImpl;
+import com.task.array.validator.impl.DataValidatorImpl;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
-import java.util.OptionalInt;
-import java.util.logging.Logger;
 import java.util.List;
 
 public class App {
-
-    private static final Logger log = Logger.getLogger(App.class.getName());
+    private static final Logger logger = LogManager.getLogger(App.class);
 
     public static void main(String[] args) {
         String filePath = "data/arrays.txt";
-        ArrayReader reader = new ArrayReader();
-        DataValidator validator = new DataValidator();
-        DataParser parser = new DataParserimpl();
-        CustomArrayServiceImpl service = new CustomArrayServiceImpl();
 
+        // Infrastructure
+        ArrayReader reader = new ArrayReader();
+        DataValidatorImpl validator = new DataValidatorImpl();
+        DataParser parser = new DataParserimpl();
         ArrayFactory factory = new ArrayFactoryImpl();
+        ArrayRepositoryImpl repository = ArrayRepositoryImpl.getInstance();
+
+        // Prepare observer with injected service
+        ArrayObserver observer = new ArrayObserverImpl(new ArrayCalculationServiceImpl());
 
         try {
             List<String> lines = reader.readLines(filePath);
+
             for (String line : lines) {
-                if (validator.isValid(line)) {
+                if (validator.isValidImpl(line)) {
                     int[] numbers = parser.parseLine(line);
 
-                    CustomArray array = factory.createWithData(numbers);
+                    // Create array and attach observer
+                    CustomArray array = factory.create(numbers);
+                    array.attach(observer);
 
-                    OptionalInt max = service.findMax(array);
+                    // Initial manual update to fill Warehouse
+                    observer.update(array);
 
-                    if (max.isPresent()) {
-                        log.info("Array from file processed. Max: " + max.getAsInt());
-                    } else {
-                        log.warning("The array was empty");
-                    }
+                    // Add to repository
+                    repository.add(array);
+
+                    logger.info("Processed array ID: {}", array.getId());
                 } else {
-                    log.warning("Line missing (incorrect format or empty): " + line);
+                    logger.warn("Invalid line format: {}", line);
                 }
             }
-
         } catch (CustomArrayException e) {
-            log.severe("Error while working with data: " + e.getMessage());
+            logger.error("Critical error: {}", e.getMessage());
         }
     }
 }

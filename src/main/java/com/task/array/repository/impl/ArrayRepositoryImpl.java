@@ -1,4 +1,4 @@
-package com.task.array.repository;
+package com.task.array.repository.impl;
 
 import com.task.array.entity.CustomArray;
 import com.task.array.specification.Specification;
@@ -10,37 +10,40 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Comparator;
 
-public class ArrayRepository {
+public class ArrayRepositoryImpl implements ArrayRepository {
 
     private static final Logger logger = LogManager.getLogger();
 
-    private static ArrayRepository instance;
+    private static ArrayRepositoryImpl instance;
 
     private final List<CustomArray> arrays;
 
-    private ArrayRepository(){
+    private ArrayRepositoryImpl() {
         this.arrays = new ArrayList<>();
     }
 
-    public static ArrayRepository getInstance(){
-        if(instance == null){
-            instance = new ArrayRepository();
+    public static ArrayRepositoryImpl getInstance() {
+        if (instance == null) {
+            instance = new ArrayRepositoryImpl();
             logger.info("ArrayRepository singleton created");
         }
 
         return instance;
     }
 
-    public void add(CustomArray customArray){
+    @Override
+    public void add(CustomArray customArray) {
         arrays.add(customArray);
         logger.info("Added array with ID {} to repository", customArray.getId());
     }
 
-    public void remove(CustomArray customArray){
+    @Override
+    public void remove(CustomArray customArray) {
         arrays.remove(customArray);
         logger.info("Removed array with ID {} from repository", customArray.getId());
     }
 
+    @Override
     public Optional<CustomArray> getById(int id) {
         for (CustomArray arr : arrays) {
             if (arr.getId() == id) {
@@ -51,16 +54,18 @@ public class ArrayRepository {
         return Optional.empty();
     }
 
+    @Override
     public List<CustomArray> getAll() {
         return new ArrayList<>(arrays);
     }
 
+    @Override
     public List<CustomArray> query(Specification specification) {
 
         List<CustomArray> results = new ArrayList<>();
 
-        for(CustomArray arr : arrays){
-            if(specification.specify(arr)){
+        for (CustomArray arr : arrays) {
+            if (specification.specify(arr)) {
                 results.add(arr);
             }
         }
@@ -69,6 +74,7 @@ public class ArrayRepository {
         return results;
     }
 
+    @Override
     public List<CustomArray> sort(Comparator<CustomArray> comparator) {
 
         List<CustomArray> sortedList = new ArrayList<>(arrays);

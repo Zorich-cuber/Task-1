@@ -14,7 +14,7 @@ public class ArrayWarehouse {
 
     private final Map<Long, ArrayStatistics> map;
 
-    private ArrayWarehouse(){
+    private ArrayWarehouse() {
         this.map = new HashMap<>();
     }
 
@@ -27,24 +27,28 @@ public class ArrayWarehouse {
         return instance;
     }
 
-    public void put(Long arrayId, ArrayStatistics statistics){
+    public void put(Long arrayId, ArrayStatistics statistics) {
 
         map.put(arrayId, statistics);
         logger.info("Statistics put for array ID {}: {}", arrayId, statistics);
 
     }
 
-    public  ArrayStatistics get(Long arrayId){
-        return  map.get(arrayId);
+    public ArrayStatistics get(Long arrayId) {
+        return map.get(arrayId);
     }
 
-    public void remove(Long arrayId){
+    public void remove(Long arrayId) {
         map.remove(arrayId);
         logger.debug("Statistics removed for array ID {}", arrayId);
     }
 
-    public void update(Long arrayId, ArrayStatistics statistics){
+    public void update(Long arrayId, ArrayStatistics statistics) {
         this.put(arrayId, statistics);
     }
 
+    public void clear() {
+        map.clear();
+        logger.info("Warehouse cleared");
+    }
 }

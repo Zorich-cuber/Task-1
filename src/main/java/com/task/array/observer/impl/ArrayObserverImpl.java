@@ -4,7 +4,6 @@ import com.task.array.observer.ArrayObserver;
 import com.task.array.entity.ArrayStatistics;
 import com.task.array.entity.CustomArray;
 import com.task.array.service.ArrayCalculationService;
-import com.task.array.service.impl.ArrayCalculationServiceImpl;
 import com.task.array.warehouse.ArrayWarehouse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,6 +14,11 @@ import java.util.OptionalInt;
 public class ArrayObserverImpl implements ArrayObserver {
 
     private static final Logger logger = LogManager.getLogger();
+    private final  ArrayCalculationService service;
+
+    public ArrayObserverImpl(ArrayCalculationService service){
+        this.service = service;
+    }
 
     @Override
     public void update(CustomArray customArray) {
@@ -22,8 +26,6 @@ public class ArrayObserverImpl implements ArrayObserver {
         long id = customArray.getId();
 
         logger.info("Observer detected change in array ID: {}", id);
-
-        ArrayCalculationService service = new ArrayCalculationServiceImpl();
 
         double sum = service.sum(customArray.getData());
 
