@@ -3,9 +3,9 @@ package com.task.array.specification;
 import com.task.array.entity.CustomArray;
 
 public class IdSpecification implements Specification{
-    private final int wantedId;
+    private final long wantedId;
 
-    public IdSpecification(int wantedId){
+    public IdSpecification(long wantedId){
         this.wantedId = wantedId;
     }
 

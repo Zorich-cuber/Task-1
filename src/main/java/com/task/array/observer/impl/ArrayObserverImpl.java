@@ -1,6 +1,5 @@
 package com.task.array.observer.impl;
 
-import com.task.array.exception.CustomArrayException;
 import com.task.array.observer.ArrayObserver;
 import com.task.array.entity.ArrayStatistics;
 import com.task.array.entity.CustomArray;
