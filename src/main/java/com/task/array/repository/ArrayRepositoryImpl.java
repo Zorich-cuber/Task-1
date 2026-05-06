@@ -1,4 +1,4 @@
-package com.task.array.repository.impl;
+package com.task.array.repository;
 
 import com.task.array.entity.CustomArray;
 import com.task.array.specification.Specification;

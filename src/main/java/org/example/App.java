@@ -9,7 +9,7 @@ import com.task.array.observer.impl.ArrayObserverImpl;
 import com.task.array.parser.DataParser;
 import com.task.array.parser.DataParserimpl;
 import com.task.array.reader.impl.ArrayReader;
-import com.task.array.repository.impl.ArrayRepositoryImpl;
+import com.task.array.repository.ArrayRepositoryImpl;
 import com.task.array.service.impl.ArrayCalculationServiceImpl;
 import com.task.array.validator.impl.DataValidatorImpl;
 import org.apache.logging.log4j.LogManager;

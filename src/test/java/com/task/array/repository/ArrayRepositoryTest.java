@@ -2,9 +2,7 @@ package com.task.array.repository;
 
 import com.task.array.entity.CustomArray;
 import com.task.array.observer.impl.ArrayObserverImpl;
-import com.task.array.repository.impl.ArrayRepositoryImpl;
 import com.task.array.service.impl.ArrayCalculationServiceImpl;
-import com.task.array.specification.IdSpecification;
 import com.task.array.specification.SumGreaterThanSpecification;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
