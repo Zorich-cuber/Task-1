@@ -1,6 +1,7 @@
-package com.task.array.repository;
+package com.task.array.repository.impl;
 
 import com.task.array.entity.CustomArray;
+import com.task.array.repository.ArrayRepository;
 import com.task.array.specification.Specification;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
